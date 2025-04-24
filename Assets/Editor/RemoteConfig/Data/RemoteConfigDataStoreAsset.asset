@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
+  m_Name: RemoteConfigDataStoreAsset
+  m_EditorClassIdentifier: 
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e1f0bfeb-609f-4f5c-9bd4-55e486837a03\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"EnemyHealth\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"a9213999-d6a3-439c-aa2f-0bce6a5bb4e1\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"Speed\",\r\n      \"type\": \"float\",\r\n      \"value\": 0.3\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"06f5cbb1-f885-45c1-a488-6538eb805559\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"EnemySpeed\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 3.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"87d52085-c1cb-4c89-98a1-bc3b2cda7f9e\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"SpawnRate\",\r\n      \"type\": \"float\",\r\n      \"value\": 1.3\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"80b44762-afe6-45f0-be23-433992dab5da\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Weave1\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 19\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e1f0bfeb-609f-4f5c-9bd4-55e486837a03\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"EnemyHealth\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"a9213999-d6a3-439c-aa2f-0bce6a5bb4e1\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"Speed\",\r\n      \"type\": \"float\",\r\n      \"value\": 0.3\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"06f5cbb1-f885-45c1-a488-6538eb805559\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"EnemySpeed\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 3.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"87d52085-c1cb-4c89-98a1-bc3b2cda7f9e\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"SpawnRate\",\r\n      \"type\": \"float\",\r\n      \"value\": 1.3\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"80b44762-afe6-45f0-be23-433992dab5da\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Weave1\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 19\r\n    }\r\n  }\r\n]"
+  _environments: "[\r\n  {\r\n    \"projectId\": \"7c9c80d7-ef30-4569-81c1-e4afcf6072ad\",\r\n   
+    \"name\": \"production\",\r\n    \"id\": \"eeb4e7b3-622e-4c6b-bfdc-0896b0712894\",\r\n   
+    \"isDefault\": true,\r\n    \"createdAt\": \"2024-09-16T21:43:42Z\",\r\n    \"updatedAt\":
+    \"2024-09-16T21:43:42Z\"\r\n  }\r\n]"

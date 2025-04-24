@@ -1,0 +1,783 @@
+fileFormatVersion: 2
+guid: e915b5159c4de3f43818db9a17643d42
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Body_CrazyDave:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_CrazyDave:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: crazydave(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave_M:crazydave_body_crazydave_Mesh_lod.000
+      parentName: crazydave(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDaveSkin_M:crazydave_body_crazydave_Mesh_lod.000
+      parentName: crazydave(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDaveAcc_M:crazydave_body_crazydave_Mesh_lod.000
+      parentName: crazydave(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:Hips
+      parentName: crazydave(Clone)
+      position: {x: 0.00000003666432, y: 0.010197652, z: 0.000029740602}
+      rotation: {x: 0.00000030866818, y: -0.0000005856255, z: -0.000025456746, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:Spine
+      parentName: Body_CrazyDave:Hips
+      position: {x: -0, y: 0.0013271701, z: -0.000068043344}
+      rotation: {x: -0.025609808, y: -0.00000006652179, z: 0.000025463394, w: 0.999672}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:Spine1
+      parentName: Body_CrazyDave:Spine
+      position: {x: -0, y: 0.0015504003, z: 1.107498e-12}
+      rotation: {x: 5.262812e-26, y: -7.750331e-14, z: 6.7904346e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:Spine2
+      parentName: Body_CrazyDave:Spine1
+      position: {x: -0, y: 0.001771886, z: 5.1388104e-12}
+      rotation: {x: 0, y: 6.3108872e-30, z: -1.3568408e-28, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightShoulder
+      parentName: Body_CrazyDave:Spine2
+      position: {x: 0.0011559778, y: 0.0016311705, z: -0.000014765547}
+      rotation: {x: -0.53412676, y: -0.4622283, z: 0.53731173, w: -0.46081424}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightArm
+      parentName: Body_CrazyDave:RightShoulder
+      position: {x: 2.050001e-13, y: 0.0024284008, z: 7.162093e-12}
+      rotation: {x: -0.07424009, y: 0.037827693, z: -0.0004507353, w: 0.9965226}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightForeArm
+      parentName: Body_CrazyDave:RightArm
+      position: {x: 1.2793284e-12, y: 0.0035172764, z: -6.3030345e-11}
+      rotation: {x: -0.00000023558896, y: -0.04010615, z: -0.000000031161704, w: 0.99919546}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHand
+      parentName: Body_CrazyDave:RightForeArm
+      position: {x: -1.6604412e-11, y: 0.0036087476, z: -3.9697755e-11}
+      rotation: {x: 0.040514167, y: 0.032996707, z: 0.0049745487, w: 0.9986216}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandIndex1
+      parentName: Body_CrazyDave:RightHand
+      position: {x: -0.00057432556, y: 0.001867933, z: -0.00005630975}
+      rotation: {x: -0.04032747, y: -0.0016271812, z: -0.012454247, w: 0.9991076}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandIndex2
+      parentName: Body_CrazyDave:RightHandIndex1
+      position: {x: -0.0000070043047, y: 0.0005643553, z: -1.7532197e-12}
+      rotation: {x: -0.000004162395, y: 0.00068440416, z: 0.006205408, w: 0.9999805}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandIndex3
+      parentName: Body_CrazyDave:RightHandIndex2
+      position: {x: -0.0000004897308, y: 0.0004503424, z: -2.4036083e-12}
+      rotation: {x: -0.0000269301, y: -0.0024212766, z: 0.01121579, w: 0.9999342}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandIndex4
+      parentName: Body_CrazyDave:RightHandIndex3
+      position: {x: 0.000007493967, y: 0.00031227752, z: -2.1457116e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandMiddle1
+      parentName: Body_CrazyDave:RightHand
+      position: {x: 0.000022854516, y: 0.0018180019, z: -0.00014716771}
+      rotation: {x: -0.040297166, y: 0.006304745, z: -0.00816521, w: 0.9991345}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandMiddle2
+      parentName: Body_CrazyDave:RightHandMiddle1
+      position: {x: -0.0000015675683, y: 0.00062452414, z: -7.1519145e-12}
+      rotation: {x: -0.000001838066, y: 0.00016189936, z: -0.006447586, w: 0.9999792}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandMiddle3
+      parentName: Body_CrazyDave:RightHandMiddle2
+      position: {x: -0.000008005484, y: 0.0004967806, z: 2.0812796e-12}
+      rotation: {x: -0.0000016888935, y: -0.00057202444, z: 0.019331167, w: 0.99981296}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandMiddle4
+      parentName: Body_CrazyDave:RightHandMiddle3
+      position: {x: 0.0000095730375, y: 0.00044268582, z: -7.48118e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandRing1
+      parentName: Body_CrazyDave:RightHand
+      position: {x: 0.00055147125, y: 0.0017181118, z: -0.000034344404}
+      rotation: {x: -0.04041612, y: -0.01471875, z: -0.005714862, w: 0.9990582}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandRing2
+      parentName: Body_CrazyDave:RightHandRing1
+      position: {x: 0.000000239214, y: 0.00047545295, z: 1.474649e-11}
+      rotation: {x: -0.00000029364432, y: -0.000000029177396, z: 0.00000008940697,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandRing3
+      parentName: Body_CrazyDave:RightHandRing2
+      position: {x: 0.00000043187984, y: 0.00046841675, z: -5.4148773e-12}
+      rotation: {x: 0.000000104472676, y: 0.00016774697, z: -0.0014794188, w: 0.9999989}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandRing4
+      parentName: Body_CrazyDave:RightHandRing3
+      position: {x: -0.00000067113075, y: 0.00033827673, z: 1.2327776e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandThumb1
+      parentName: Body_CrazyDave:RightHand
+      position: {x: -0.00039715433, y: 0.00047046243, z: 0.00025125185}
+      rotation: {x: 0.03651414, y: -0.0030182034, z: 0.26450965, w: 0.96368676}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandThumb2
+      parentName: Body_CrazyDave:RightHandThumb1
+      position: {x: -0.00008652951, y: 0.0005248972, z: 4.020675e-12}
+      rotation: {x: 0.00045008227, y: -0.0066026747, z: 0.095942475, w: 0.9953649}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandThumb3
+      parentName: Body_CrazyDave:RightHandThumb2
+      position: {x: 0.000015674283, y: 0.00057155825, z: -2.0130194e-11}
+      rotation: {x: -0.0008173885, y: -0.009088187, z: 0.061734717, w: 0.99805087}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightHandThumb4
+      parentName: Body_CrazyDave:RightHandThumb3
+      position: {x: 0.00007085517, y: 0.00046520593, z: 1.5488676e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftShoulder
+      parentName: Body_CrazyDave:Spine2
+      position: {x: -0.0011559778, y: 0.0016315596, z: -0.00002235413}
+      rotation: {x: 0.53214204, y: -0.4634637, z: 0.53925997, w: 0.45959228}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftArm
+      parentName: Body_CrazyDave:LeftShoulder
+      position: {x: -6.2829787e-13, y: 0.0024284008, z: 7.13926e-12}
+      rotation: {x: -0.07426443, y: -0.02116343, z: -0.004040529, w: 0.9970058}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftForeArm
+      parentName: Body_CrazyDave:LeftArm
+      position: {x: 1.2413522e-12, y: 0.003517172, z: -8.969994e-11}
+      rotation: {x: -0.000000045143633, y: 0.023587443, z: -0.00000011791883, w: 0.9997218}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHand
+      parentName: Body_CrazyDave:LeftForeArm
+      position: {x: -2.5065712e-11, y: 0.00360164, z: -4.606801e-11}
+      rotation: {x: 0.02863699, y: -0.026021147, z: -0.004737893, w: 0.9992399}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandIndex1
+      parentName: Body_CrazyDave:LeftHand
+      position: {x: 0.00058483874, y: 0.0017418602, z: -0.00006540883}
+      rotation: {x: -0.028500307, y: -0.0008936426, z: 0.0072376854, w: 0.9995672}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandIndex2
+      parentName: Body_CrazyDave:LeftHandIndex1
+      position: {x: 0.0000015922849, y: 0.00057784916, z: 4.9272873e-12}
+      rotation: {x: -0.0000001284786, y: -0.00008077577, z: -0.00072403543, w: 0.99999976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandIndex3
+      parentName: Body_CrazyDave:LeftHandIndex2
+      position: {x: 0.0000007604062, y: 0.00049742847, z: -4.2007196e-12}
+      rotation: {x: -0.000000968586, y: 0.00041015426, z: -0.003753325, w: 0.9999929}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandIndex4
+      parentName: Body_CrazyDave:LeftHandIndex3
+      position: {x: -0.0000023527703, y: 0.00036426168, z: -1.8948355e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandRing1
+      parentName: Body_CrazyDave:LeftHand
+      position: {x: -0.0005652145, y: 0.001810097, z: -0.00007457825}
+      rotation: {x: -0.028672425, y: 0.016615318, z: 0.00015137332, w: 0.99945074}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandRing2
+      parentName: Body_CrazyDave:LeftHandRing1
+      position: {x: -0.0000049586697, y: 0.00051524554, z: 2.7470049e-12}
+      rotation: {x: -0.0000019008976, y: 0.0004917141, z: 0.0048542432, w: 0.99998814}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandRing3
+      parentName: Body_CrazyDave:LeftHandRing2
+      position: {x: 0.00000028992739, y: 0.0004137831, z: -9.7739395e-12}
+      rotation: {x: -0.000016698214, y: -0.0018755614, z: 0.008895686, w: 0.9999587}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandRing4
+      parentName: Body_CrazyDave:LeftHandRing3
+      position: {x: 0.0000046687833, y: 0.00028053188, z: -7.878333e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandMiddle1
+      parentName: Body_CrazyDave:LeftHand
+      position: {x: -0.000019624258, y: 0.0018224276, z: -0.00010442145}
+      rotation: {x: -0.028381184, y: -0.00910147, z: -0.002383849, w: 0.9995529}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandMiddle2
+      parentName: Body_CrazyDave:LeftHandMiddle1
+      position: {x: -0.000009378398, y: 0.00055402477, z: -1.14273434e-11}
+      rotation: {x: -0.000001636313, y: -0.00016016656, z: 0.026492959, w: 0.999649}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandMiddle3
+      parentName: Body_CrazyDave:LeftHandMiddle2
+      position: {x: 0.000020022273, y: 0.0005436828, z: -1.26825035e-11}
+      rotation: {x: -0.000010936187, y: -0.0018106761, z: -0.03058902, w: 0.99953043}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandMiddle4
+      parentName: Body_CrazyDave:LeftHandMiddle3
+      position: {x: -0.000010643758, y: 0.0004495776, z: -3.501188e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandThumb1
+      parentName: Body_CrazyDave:LeftHand
+      position: {x: 0.00037409342, y: 0.00046792493, z: 0.00024281345}
+      rotation: {x: 0.050904643, y: 0.00082763814, z: -0.27135733, w: 0.9611313}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandThumb2
+      parentName: Body_CrazyDave:LeftHandThumb1
+      position: {x: 0.00007673769, y: 0.0005114097, z: 2.0725185e-11}
+      rotation: {x: 0.001041112, y: 0.011064699, z: -0.05569267, w: 0.99838614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandThumb3
+      parentName: Body_CrazyDave:LeftHandThumb2
+      position: {x: 0.00002155855, y: 0.00057729665, z: 7.713599e-12}
+      rotation: {x: -0.0014434442, y: 0.017070519, z: -0.12215525, w: 0.99236315}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftHandThumb4
+      parentName: Body_CrazyDave:LeftHandThumb3
+      position: {x: -0.00009829628, y: 0.00046691892, z: -2.4015256e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:Neck
+      parentName: Body_CrazyDave:Spine2
+      position: {x: -0, y: 0.0019933705, z: -1.456472e-11}
+      rotation: {x: 0.02560951, y: 2.7893593e-21, z: -4.0599456e-20, w: 0.99967206}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:Head
+      parentName: Body_CrazyDave:Neck
+      position: {x: -0, y: 0.0017506373, z: 0.00045230513}
+      rotation: {x: -3.081488e-33, y: -0, z: 2.14058e-40, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:HeadTop_End
+      parentName: Body_CrazyDave:Head
+      position: {x: -0, y: 0.0042640185, z: 0.0011016771}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightUpLeg
+      parentName: Body_CrazyDave:Hips
+      position: {x: 0.0015670753, y: -0.00073891995, z: -0.000030375073}
+      rotation: {x: 0.00086110557, y: 0.02220171, z: 0.9997182, w: 0.008362342}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightLeg
+      parentName: Body_CrazyDave:RightUpLeg
+      position: {x: 4.6600267e-12, y: 0.0040321313, z: -2.5211697e-12}
+      rotation: {x: -0.08643221, y: -0.0015620774, z: 0.018095883, w: 0.9960922}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightFoot
+      parentName: Body_CrazyDave:RightLeg
+      position: {x: -7.782062e-12, y: 0.003568193, z: 2.7733026e-12}
+      rotation: {x: 0.59590447, y: 0.020699589, z: 0.013892475, w: 0.8026683}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightToeBase
+      parentName: Body_CrazyDave:RightFoot
+      position: {x: 1.1452564e-12, y: 0.003387957, z: -2.1181897e-11}
+      rotation: {x: 0.25249127, y: -0.033043195, z: 0.008627869, w: 0.9669964}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:RightToe_End
+      parentName: Body_CrazyDave:RightToeBase
+      position: {x: -2.4434453e-13, y: 0.001488172, z: -6.725404e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftUpLeg
+      parentName: Body_CrazyDave:Hips
+      position: {x: -0.0015670753, y: -0.00073891995, z: -0.000068274516}
+      rotation: {x: -0.0010126799, y: 0.028892666, z: 0.9995465, w: -0.008421297}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftLeg
+      parentName: Body_CrazyDave:LeftUpLeg
+      position: {x: -2.308048e-12, y: 0.0040338766, z: -4.2763974e-12}
+      rotation: {x: -0.09528501, y: 0.0016805978, z: -0.018154092, w: 0.99528307}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftFoot
+      parentName: Body_CrazyDave:LeftLeg
+      position: {x: 4.867862e-13, y: 0.003571422, z: 2.9412e-12}
+      rotation: {x: 0.5980368, y: -0.02081552, z: -0.013705766, w: 0.80108106}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftToeBase
+      parentName: Body_CrazyDave:LeftFoot
+      position: {x: -1.9102823e-12, y: 0.0033947807, z: -1.7320418e-11}
+      rotation: {x: 0.25235334, y: 0.033019416, z: -0.0086166235, w: 0.96703327}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_CrazyDave:LeftToe_End
+      parentName: Body_CrazyDave:LeftToeBase
+      position: {x: -3.4606207e-13, y: 0.0014779028, z: 2.3354125e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

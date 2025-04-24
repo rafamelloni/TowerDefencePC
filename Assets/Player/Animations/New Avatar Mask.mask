@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Avatar Mask
+  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:LeftUpLeg
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:LeftUpLeg/Body_CrazyDave:LeftLeg
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:LeftUpLeg/Body_CrazyDave:LeftLeg/Body_CrazyDave:LeftFoot
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:LeftUpLeg/Body_CrazyDave:LeftLeg/Body_CrazyDave:LeftFoot/Body_CrazyDave:LeftToeBase
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:LeftUpLeg/Body_CrazyDave:LeftLeg/Body_CrazyDave:LeftFoot/Body_CrazyDave:LeftToeBase/Body_CrazyDave:LeftToe_End
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:RightUpLeg
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:RightUpLeg/Body_CrazyDave:RightLeg
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:RightUpLeg/Body_CrazyDave:RightLeg/Body_CrazyDave:RightFoot
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:RightUpLeg/Body_CrazyDave:RightLeg/Body_CrazyDave:RightFoot/Body_CrazyDave:RightToeBase
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:RightUpLeg/Body_CrazyDave:RightLeg/Body_CrazyDave:RightFoot/Body_CrazyDave:RightToeBase/Body_CrazyDave:RightToe_End
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandIndex1
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandIndex1/Body_CrazyDave:LeftHandIndex2
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandIndex1/Body_CrazyDave:LeftHandIndex2/Body_CrazyDave:LeftHandIndex3
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandIndex1/Body_CrazyDave:LeftHandIndex2/Body_CrazyDave:LeftHandIndex3/Body_CrazyDave:LeftHandIndex4
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandMiddle1
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandMiddle1/Body_CrazyDave:LeftHandMiddle2
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandMiddle1/Body_CrazyDave:LeftHandMiddle2/Body_CrazyDave:LeftHandMiddle3
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandMiddle1/Body_CrazyDave:LeftHandMiddle2/Body_CrazyDave:LeftHandMiddle3/Body_CrazyDave:LeftHandMiddle4
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandRing1
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandRing1/Body_CrazyDave:LeftHandRing2
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandRing1/Body_CrazyDave:LeftHandRing2/Body_CrazyDave:LeftHandRing3
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandRing1/Body_CrazyDave:LeftHandRing2/Body_CrazyDave:LeftHandRing3/Body_CrazyDave:LeftHandRing4
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandThumb1
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandThumb1/Body_CrazyDave:LeftHandThumb2
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandThumb1/Body_CrazyDave:LeftHandThumb2/Body_CrazyDave:LeftHandThumb3
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:LeftShoulder/Body_CrazyDave:LeftArm/Body_CrazyDave:LeftForeArm/Body_CrazyDave:LeftHand/Body_CrazyDave:LeftHandThumb1/Body_CrazyDave:LeftHandThumb2/Body_CrazyDave:LeftHandThumb3/Body_CrazyDave:LeftHandThumb4
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:Neck
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:Neck/Body_CrazyDave:Head
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:Neck/Body_CrazyDave:Head/Body_CrazyDave:HeadTop_End
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandIndex1
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandIndex1/Body_CrazyDave:RightHandIndex2
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandIndex1/Body_CrazyDave:RightHandIndex2/Body_CrazyDave:RightHandIndex3
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandIndex1/Body_CrazyDave:RightHandIndex2/Body_CrazyDave:RightHandIndex3/Body_CrazyDave:RightHandIndex4
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandMiddle1
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandMiddle1/Body_CrazyDave:RightHandMiddle2
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandMiddle1/Body_CrazyDave:RightHandMiddle2/Body_CrazyDave:RightHandMiddle3
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandMiddle1/Body_CrazyDave:RightHandMiddle2/Body_CrazyDave:RightHandMiddle3/Body_CrazyDave:RightHandMiddle4
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandRing1
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandRing1/Body_CrazyDave:RightHandRing2
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandRing1/Body_CrazyDave:RightHandRing2/Body_CrazyDave:RightHandRing3
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandRing1/Body_CrazyDave:RightHandRing2/Body_CrazyDave:RightHandRing3/Body_CrazyDave:RightHandRing4
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandThumb1
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandThumb1/Body_CrazyDave:RightHandThumb2
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandThumb1/Body_CrazyDave:RightHandThumb2/Body_CrazyDave:RightHandThumb3
+    m_Weight: 1
+  - m_Path: Body_CrazyDave:Hips/Body_CrazyDave:Spine/Body_CrazyDave:Spine1/Body_CrazyDave:Spine2/Body_CrazyDave:RightShoulder/Body_CrazyDave:RightArm/Body_CrazyDave:RightForeArm/Body_CrazyDave:RightHand/Body_CrazyDave:RightHandThumb1/Body_CrazyDave:RightHandThumb2/Body_CrazyDave:RightHandThumb3/Body_CrazyDave:RightHandThumb4
+    m_Weight: 1
+  - m_Path: Body_CrazyDave_M:crazydave_body_crazydave_Mesh_lod.000
+    m_Weight: 1
+  - m_Path: Body_CrazyDaveAcc_M:crazydave_body_crazydave_Mesh_lod.000
+    m_Weight: 1
+  - m_Path: Body_CrazyDaveSkin_M:crazydave_body_crazydave_Mesh_lod.000
+    m_Weight: 1
