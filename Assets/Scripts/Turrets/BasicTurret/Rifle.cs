@@ -18,6 +18,11 @@ public class Rifle : Weapon
         var b = BulletFactory.Create();
         b.transform.position = transform.position;
         b.transform.forward = transform.forward;
+
+         if(b is NormalBullet normalBullet)
+        {
+            normalBullet.torreQueDisparo = GetComponentInParent<Turret>();
+        }
         SoundFXManager.instance.PlaySoundFXClip(fireSoundClip, transform, 1f);
         
 

@@ -15,6 +15,7 @@ public class Enemie : Enemies
     // Si el shader está en r;
     private int coinsForKill = 10;
     public bool IsDead { get; private set; }
+    public string type = "Normal";
 
    
 
@@ -28,7 +29,7 @@ public class Enemie : Enemies
 
     }
 
-    public void TakeDmg(float dmg)
+    public void TakeDmg(float dmg, Turret torreQueDisparo = null)
     {
         currentLife-= dmg;
         
@@ -37,6 +38,7 @@ public class Enemie : Enemies
         if (currentLife <= 0)
         {
             //Death();
+            torreQueDisparo.kills++;
             StartCoroutine(DeathCoroutine());
         }
     }
@@ -59,9 +61,10 @@ public class Enemie : Enemies
     void Death()
     {
         IsDead = true;
+        StatsManager.Instance.RegisterEnemy(type, currentLife, transform.position);
         Pool.Return(this);
         GameManager.Instance.IncreaseCoins(coinsForKill);
-        StatsManager.Instance.RegisterEnemy("Normal", currentLife, transform.position);
+       
     }
     public override void TurnOn()
     {

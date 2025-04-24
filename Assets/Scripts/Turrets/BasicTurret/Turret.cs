@@ -19,6 +19,8 @@ public class Turret : MonoBehaviour
 
     public TMP_Text textPrecioDeMejora;
 
+    public int kills;
+
 
     
 

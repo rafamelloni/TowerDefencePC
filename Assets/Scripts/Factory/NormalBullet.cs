@@ -17,6 +17,8 @@ public class NormalBullet : Bullets
 
     public ParticlePool pool;
 
+    public Turret torreQueDisparo;
+
     private void Update()
     {
         transform.position += transform.forward * _speed * Time.deltaTime;
@@ -53,9 +55,10 @@ public class NormalBullet : Bullets
             
 
             Pool.Return(this);
-            other.gameObject.GetComponent<Enemie>().TakeDmg(dmg);
+            other.gameObject.GetComponent<Enemie>().TakeDmg(dmg, torreQueDisparo);
+            torreQueDisparo = null;
 
-            
+
         }
 
         if (other.gameObject.CompareTag("FinalBoss"))

@@ -50,6 +50,7 @@ public class ButtonPlace : MonoBehaviour
 
                     // Instantiate the turret at the platform's position with an offset
                     instantiatedTurret = Instantiate(objectToInstantiate, closestPlatform.position + offset, Quaternion.Euler(0, 90, 0));
+                    StatsManager.Instance.torresEnEscena.Add(instantiatedTurret.GetComponent<Turret>());
 
 
                     GameObject humo = Instantiate(particulasDeHumpo, closestPlatform.position + offset, Quaternion.identity);
