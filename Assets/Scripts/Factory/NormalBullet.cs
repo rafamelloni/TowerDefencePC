@@ -41,9 +41,6 @@ public class NormalBullet : Bullets
         {
             Vector3 collisionPoint = other.ClosestPointOnBounds(transform.position);
 
-
-            // Instanciar las partículas en la posición de colisión
-
             if (pool != null)
             {
                 pool.GetParticle(Sparks, collisionPoint);
@@ -52,19 +49,22 @@ public class NormalBullet : Bullets
                 pool.GetParticle(Flash, collisionPoint);
             }
 
-            
+            if (torreQueDisparo != null)
+            {
+                other.gameObject.GetComponent<Enemie>().TakeDmg(dmg, torreQueDisparo);
+            }
+            else
+            {
+                other.gameObject.GetComponent<Enemie>().TakeDmg(dmg);
+            }
 
             Pool.Return(this);
-            other.gameObject.GetComponent<Enemie>().TakeDmg(dmg, torreQueDisparo);
             torreQueDisparo = null;
-
-
         }
 
         if (other.gameObject.CompareTag("FinalBoss"))
         {
             Vector3 collisionPoint = other.ClosestPointOnBounds(transform.position);
-
 
             if (pool != null)
             {
@@ -76,8 +76,6 @@ public class NormalBullet : Bullets
 
             Pool.Return(this);
             other.gameObject.GetComponent<FinalBossBehaviour>().TakeDamage(dmg);
-
-
         }
     }
 }

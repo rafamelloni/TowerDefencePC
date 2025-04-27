@@ -12,7 +12,7 @@ public class Enemie : Enemies
 
     //private float _maxLife = RemoteConfigHandler.instance.EnemyHealth;
     public float currentLife;
-    // Si el shader está en r;
+    // Si el shader estï¿½ en r;
     private int coinsForKill = 10;
     public bool IsDead { get; private set; }
     public string type = "Normal";
@@ -31,14 +31,17 @@ public class Enemie : Enemies
 
     public void TakeDmg(float dmg, Turret torreQueDisparo = null)
     {
-        currentLife-= dmg;
-        
-        
+        currentLife -= dmg;
+
+        // Registrar el daÃ±o en el StatsManager
+        StatsManager.Instance.RegisterEnemyDamage(type, dmg, Time.time);
 
         if (currentLife <= 0)
         {
-            //Death();
-            torreQueDisparo.kills++;
+            if (torreQueDisparo != null)
+            {
+                torreQueDisparo.kills++;
+            }
             StartCoroutine(DeathCoroutine());
         }
     }
@@ -52,7 +55,7 @@ public class Enemie : Enemies
         // Espera 2 segundos
         yield return new WaitForSeconds(0.5f);
 
-        // Llama a la función de muerte
+        // Llama a la funciï¿½n de muerte
 
         Death();
         

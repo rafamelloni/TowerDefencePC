@@ -14,7 +14,7 @@ public class Turret : MonoBehaviour
     public float rotSpeed;
     public float dist;
     public int clickCount;
-    private int maxUpgradeLevel = 3; // Nivel máximo de mejora
+    private int maxUpgradeLevel = 3; // Nivel mï¿½ximo de mejora
 
 
     public TMP_Text textPrecioDeMejora;
@@ -73,7 +73,7 @@ public class Turret : MonoBehaviour
       
         GameObject[] enemyObjects = GameObject.FindGameObjectsWithTag("Enemy");
 
-        // Encontrar el enemigo más cercano
+        // Encontrar el enemigo mï¿½s cercano
         GameObject closestEnemy = null;
         float closestDistance = Mathf.Infinity;
 
@@ -87,27 +87,27 @@ public class Turret : MonoBehaviour
             }
         }
 
-        // Si hay un enemigo válido
+        // Si hay un enemigo vï¿½lido
         if (closestEnemy != null && closestDistance < normalTurretData.rotationDistance)
         {
             Transform enemyTransform = closestEnemy.transform;
 
-            // Calcular la dirección hacia el enemigo (ignorando la diferencia en Y)
+            // Calcular la direcciï¿½n hacia el enemigo (ignorando la diferencia en Y)
             Vector3 direction = enemyTransform.position - transform.position;
-            direction.y = 0; // Asegurar que la rotación ocurre solo en el plano horizontal
+            direction.y = 0; // Asegurar que la rotaciï¿½n ocurre solo en el plano horizontal
 
             // Evitar rotaciones innecesarias
             if (direction.magnitude > 0.1f)
             {
-                // Calcular la rotación hacia el enemigo
+                // Calcular la rotaciï¿½n hacia el enemigo
                 Quaternion targetRotation = Quaternion.LookRotation(direction);
 
-                // Aplicar un offset de 180° en el eje Y
+                // Aplicar un offset de 180ï¿½ en el eje Y
                 Quaternion offsetRotation = Quaternion.Euler(0, 90, 0);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation * offsetRotation, Time.deltaTime * normalTurretData.rotationSpeed);
             }
 
-            // Si el enemigo está dentro del rango de disparo, dispara
+            // Si el enemigo estï¿½ dentro del rango de disparo, dispara
             if (closestDistance < normalTurretData.dist && Time.time >= nextFireTime)
             {
                 _weapon.Shoot();
@@ -125,7 +125,7 @@ public class Turret : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;  // Color de la esfera del Gizmo
-        Gizmos.DrawWireSphere(transform.position, 2f);  // Dibuja la esfera de colisión con radio de 2 unidades
+        Gizmos.DrawWireSphere(transform.position, 2f);  // Dibuja la esfera de colisiï¿½n con radio de 2 unidades
     }
 
 
