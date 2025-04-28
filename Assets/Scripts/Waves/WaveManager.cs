@@ -75,7 +75,9 @@ public class WaveManager : MonoBehaviour
             currentWaveIndex++;
             boolBossIndex++;
             print(currentWaveIndex);
-           
+
+            // Avanzar a la siguiente oleada en CoinSpendingManager
+            CoinSpendingManager.Instance.NextWave();
 
         }
         

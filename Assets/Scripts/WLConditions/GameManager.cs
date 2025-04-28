@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     int deadCounts; // Resetea el contador de muertos en cada llamada
 
 
-  
+
     ////private async void Start()
     ////{
     ////    if (AuthenticationService.Instance.IsSignedIn)
@@ -69,6 +69,13 @@ public class GameManager : MonoBehaviour
     ////        Debug.LogError($"Error loading currency: {e.Message}");
     ////    }
     ////}
+
+    // Tupla para almacenar información sobre las oleadas completadas
+    private List<(int waveNumber, int enemiesKilled, int coinsSpent)> completedWaves = new List<(int, int, int)>();
+
+    // Lista para almacenar información sobre las acciones de compra de torretas
+    private List<object> turretPurchaseActions = new List<object>();
+
     private async void Awake()
     {
         
@@ -197,6 +204,9 @@ public class GameManager : MonoBehaviour
     {
         coins -= value;
         textMeshProUGUI.text = coins.ToString();
+
+        // Registrar el gasto de monedas en CoinSpendingManager
+        CoinSpendingManager.Instance.RegisterCoinSpending(value);
     }
     //
 
@@ -224,5 +234,30 @@ public class GameManager : MonoBehaviour
                 UnregisterEnemy(enemy); // Eliminar el enemigo de la lista
             }
         }
+    }
+
+    // Método para registrar una oleada completada
+    public void RegisterCompletedWave(int waveNumber, int enemiesKilled, int coinsSpent)
+    {
+        completedWaves.Add((waveNumber, enemiesKilled, coinsSpent));
+    }
+
+    // Método para registrar una acción de compra de torreta
+    public void RegisterTurretPurchase(string turretName, int cost)
+    {
+        var purchaseAction = new
+        {
+            TurretName = turretName,
+            Cost = cost,
+            Time = Time.time
+        };
+
+        turretPurchaseActions.Add(purchaseAction);
+    }
+
+    // Método para obtener todas las acciones de compra de torretas
+    public IEnumerable<object> GetTurretPurchaseActions()
+    {
+        return turretPurchaseActions;
     }
 }

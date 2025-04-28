@@ -56,6 +56,13 @@ public class StatsManager : MonoBehaviour
                 Debug.Log($"Tipo: {stat.enemyType}, Daño promedio: {stat.averageDamage:F2}, Tiempo promedio de vida: {stat.averageLifetime:F2}s");
             }
         }
+
+        // Mostrar el promedio de monedas gastadas por oleada al presionar la tecla T
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            float averageCoinsSpent = CoinSpendingManager.Instance.GetAverageCoinsSpentPerWave();
+            Debug.Log($"Promedio de monedas gastadas por oleada: {averageCoinsSpent:F2}");
+        }
     }
 
     public void RegisterEnemy(string type, float healthAtDeath, Vector3 position)
