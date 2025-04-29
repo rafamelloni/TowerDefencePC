@@ -28,6 +28,7 @@ public class StatsManager : MonoBehaviour
 
     private void Update()
     {
+        //Rafael Melloni
         foreach (var enemy in enemyDeaths)
         {
             if(Input.GetKeyDown(KeyCode.Q)) Debug.Log($"Enemy type: {enemy.enemyType}, Health at death: {enemy.healthAtDeath}, Position: {enemy.position}");
@@ -35,12 +36,11 @@ public class StatsManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            var top = TopTorresLetales(3);
-            foreach (var t in top)
-            {
-                Debug.Log($" {t.nombre} {t.kills} kills");
-            }
+            TopTorresLetales(3); // o cualquier cantidad
+
+           
         }
+        //
 
         // Nueva funcionalidad: Mostrar estadísticas de daño por tipo de enemigo
         if (Input.GetKeyDown(KeyCode.R))
@@ -76,26 +76,38 @@ public class StatsManager : MonoBehaviour
         enemyDamageStats.Add((type, damage, timeOfDeath));
     }
 
-    public List<(string nombre, int kills)> TopTorresLetales(int cantidad)
+
+    //Rafael Melloni
+    // Rafael Melloni
+    public void TopTorresLetales(int cantidad)
     {
-        // Asegurarse de que la lista no sea null
         if (torresEnEscena == null)
         {
             torresEnEscena = new List<Turret>();
             Debug.LogWarning("Lista de torres no inicializada. Se creó una nueva lista vacía.");
-            return new List<(string, int)>();
+            return;
         }
 
-        // Filtrar torretas null y activas
-        return torresEnEscena
+        var topTorres = torresEnEscena
             .Where(t => t != null && t.gameObject != null && t.gameObject.activeSelf)
             .OrderByDescending(t => t.kills)
             .Take(cantidad)
-            .Select(t => (t.name, t.kills))
-            .ToList();
+            .Select(t => new
+            {
+                Nombre = t.name,
+                Kills = t.kills
+            });
+
+        foreach (var torre in topTorres)
+        {
+            Debug.Log($"Nombre: {torre.Nombre}, Kills: {torre.Kills}");
+        }
     }
 
-    // Nueva función LINQ con time-slicing y generador
+
+    //
+
+    // Nueva función LINQ con time-slicing y generador Morena Guerra
     public IEnumerable<(string enemyType, float averageDamage, float averageLifetime)> GetDamageStatsByEnemyType()
     {
         // Time-slicing: Agrupar por intervalos de tiempo
@@ -123,7 +135,7 @@ public class StatsManager : MonoBehaviour
         }
     }
 
-    // Nueva función LINQ que combina Where, OrderBy y ToDictionary
+    // Guerra Morena
     public Dictionary<string, List<Vector3>> GetEnemyDeathPositionsByType()
     {
         return enemyDeaths

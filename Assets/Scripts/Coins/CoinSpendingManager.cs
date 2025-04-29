@@ -7,7 +7,7 @@ public class CoinSpendingManager : MonoBehaviour
 {
     public static CoinSpendingManager Instance { get; private set; }
 
-    // Lista para registrar el gasto de monedas por oleada
+    // Lautaro Nieto
     private List<(int wave, int coinsSpent)> coinsSpentPerWave = new List<(int, int)>();
     private int currentWave = 1; // Suponiendo que comienzas en la oleada 1
 
