@@ -16,6 +16,7 @@ public class Enemie : Enemies
     private int coinsForKill = 10;
     public bool IsDead { get; private set; }
     public string type = "Normal";
+    private Turret turret;
 
    
 
@@ -40,7 +41,7 @@ public class Enemie : Enemies
         {
             if (torreQueDisparo != null)
             {
-                torreQueDisparo.kills++;
+                turret = torreQueDisparo;
             }
             StartCoroutine(DeathCoroutine());
         }
@@ -63,6 +64,7 @@ public class Enemie : Enemies
 
     void Death()
     {
+        turret.kills++;
         IsDead = true;
         StatsManager.Instance.RegisterEnemy(type, currentLife, transform.position);
         Pool.Return(this);
