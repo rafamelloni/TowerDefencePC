@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+
+
 public class CoinSpendingManager : MonoBehaviour
 {
     public static CoinSpendingManager Instance { get; private set; }
 
-    // Lautaro Nieto
-    private List<(int wave, int coinsSpent)> coinsSpentPerWave = new List<(int, int)>();
+    // Lista para registrar el gasto de monedas por oleada
+    private List<int> coinsSpentPerWave = new List<int>();
     private int currentWave = 1; // Suponiendo que comienzas en la oleada 1
 
     private void Awake()
@@ -32,7 +34,7 @@ public class CoinSpendingManager : MonoBehaviour
     // Método para registrar el gasto de monedas
     public void RegisterCoinSpending(int coinsSpent)
     {
-        coinsSpentPerWave.Add((currentWave, coinsSpent));
+        coinsSpentPerWave.Add(coinsSpent);
     }
 
     // Método para obtener el promedio de monedas gastadas por oleada
@@ -40,11 +42,11 @@ public class CoinSpendingManager : MonoBehaviour
     {
         // Grupo 1: Where
         var filteredWaves = coinsSpentPerWave
-            .Where(entry => entry.wave > 0); // Filtrar oleadas válidas
+            .Where(coinsSpent => coinsSpent > 0); // Filtrar gastos válidos
 
         // Grupo 2: OrderBy
         var orderedWaves = filteredWaves
-            .OrderBy(entry => entry.wave); // Ordenar por oleada
+            .OrderBy(coinsSpent => coinsSpent); // Ordenar por gasto
 
         // Grupo 3: ToList
         var waveList = orderedWaves.ToList(); // Convertir a lista
@@ -52,13 +54,58 @@ public class CoinSpendingManager : MonoBehaviour
         if (waveList.Count == 0) return 0;
 
         float totalCoinsSpent = 0;
-        foreach (var entry in waveList)
+        foreach (var coinsSpent in waveList)
         {
-            totalCoinsSpent += entry.coinsSpent;
+            totalCoinsSpent += coinsSpent;
         }
 
-        int totalWaves = waveList.Select(entry => entry.wave).Distinct().Count();
+        int totalWaves = waveList.Count;
 
         return totalWaves > 0 ? totalCoinsSpent / totalWaves : 0;
     }
+
+
+    public int GetFirstCoinSpending()
+    {
+        return coinsSpentPerWave.FirstOrDefault();
+    }
+
+   
+    public IEnumerable<int> GetOrderedCoinSpendings()
+    {
+        return coinsSpentPerWave
+            .OrderBy(coinsSpent => coinsSpent)
+            .ThenBy(coinsSpent => coinsSpent);
+    }
+
+
+    public int GetTotalCoinSpending()
+    {
+        return coinsSpentPerWave.Aggregate(0, (total, next) => total + next);
+    }
+
+    // Generador para obtener gastos de monedas
+    public IEnumerable<int> GetCoinSpendingsGenerator()
+    {
+        foreach (var coinsSpent in coinsSpentPerWave)
+        {
+            yield return coinsSpent;
+        }
+    }
+
+    // Tipo anónimo para almacenar información sobre gastos de monedas
+    public object GetCoinSpendingInfo()
+    {
+        var coinSpendingInfo = new
+        {
+            TotalCoinsSpent = coinsSpentPerWave.Sum(),
+            AverageCoinsSpent = coinsSpentPerWave.Average(),
+            MaxCoinsSpent = coinsSpentPerWave.Max(),
+            MinCoinsSpent = coinsSpentPerWave.Min()
+        };
+
+        return coinSpendingInfo;
+    }
 }
+
+
