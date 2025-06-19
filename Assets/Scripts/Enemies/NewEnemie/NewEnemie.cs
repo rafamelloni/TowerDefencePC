@@ -21,6 +21,8 @@ public class NewEnemie : MonoBehaviour
 
    public  static bool isAttack;
 
+    public float totoalDamageDone;
+
     private void UpdateTurretList()
     {
         // Encuentra todas las torretas activas en la escena
@@ -36,7 +38,11 @@ public class NewEnemie : MonoBehaviour
         }
         
     }
-
+    public float TotalDamageDone()
+    {
+        totoalDamageDone +=10f;
+        return totoalDamageDone;
+    }
     private void MoveTowardsTarget()
     {
         if (currentTarget == null) return;

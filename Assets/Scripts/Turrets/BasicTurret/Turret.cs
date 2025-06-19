@@ -15,6 +15,7 @@ public class Turret : MonoBehaviour
     public float dist;
     public int clickCount;
     private int maxUpgradeLevel = 3; // Nivel m�ximo de mejora
+    public int cntador;
 
 
     public TMP_Text textPrecioDeMejora;
@@ -110,6 +111,7 @@ public class Turret : MonoBehaviour
             // Si el enemigo est� dentro del rango de disparo, dispara
             if (closestDistance < normalTurretData.dist && Time.time >= nextFireTime)
             {
+                cntador++;
                 _weapon.Shoot();
                 nextFireTime = Time.time + fireRate;
             }

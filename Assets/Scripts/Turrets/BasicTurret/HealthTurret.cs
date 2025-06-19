@@ -44,7 +44,8 @@ public class HealthTurret : MonoBehaviour
                 {
                     print("tomo dmg");
                     ApplyDamage(10f);
-                    
+                    NewEnemie x = hitCollider.gameObject.GetComponent<NewEnemie>();
+                    x.TotalDamageDone();
                     timer = fireRate;
                     
                 }

@@ -17,6 +17,7 @@ public class StatsManager : MonoBehaviour
 
     //Lista de torretas
     public List<Turret> torresEnEscena;
+    public List<NewEnemie> enemigosEnEscena;
 
     void Start()
     {
@@ -43,7 +44,7 @@ public class StatsManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             Debug.Log("Tecla R presionada - Calculando estadísticas...");
-            var damageStats = GetDamageStatsByEnemyType();
+            var damageStats = GetDamageStatsByEnemyType().Take(10);
             if (!damageStats.Any())
             {
                 Debug.Log("No hay datos de daño registrados aún");
@@ -107,7 +108,6 @@ public class StatsManager : MonoBehaviour
 
 
     //Rafael Melloni
-    // Rafael Melloni
     public void TopTorresLetales(int cantidad)
     {
         if (torresEnEscena == null)
@@ -117,21 +117,62 @@ public class StatsManager : MonoBehaviour
             return;
         }
 
-        var topTorres = torresEnEscena
+        if (enemigosEnEscena == null)
+        {
+            enemigosEnEscena = new List<NewEnemie>();
+            Debug.LogWarning("Lista de enemigos no inicializada. Se creó una nueva lista vacía.");
+            return;
+        }
+
+        // Generator
+        foreach (var linea in GenerarResumenEstadisticas(cantidad))
+        {
+            Debug.Log(linea);
+        }
+
+        // Aggregate
+        int totalDisparos = torresEnEscena
+            .Where(t => t != null)
+            .Select(t => t.cntador)
+            .Aggregate(0, (acum, actual) => acum + actual);
+
+        Debug.Log($"[Aggregate] Total de disparos entre todas las torres: {totalDisparos}");
+    }
+
+    // Generator
+    public IEnumerable<string> GenerarResumenEstadisticas(int cantidad)
+    {
+        var torresLetales = torresEnEscena
             .Where(t => t != null && t.gameObject != null && t.gameObject.activeSelf)
             .OrderByDescending(t => t.kills)
-            .Take(cantidad)
-            .Select(t => new
-            {
-                Nombre = t.name,
-                Kills = t.kills
-            });
+            .Take(cantidad);
 
-        foreach (var torre in topTorres)
+        foreach (var torre in torresLetales)
         {
-            Debug.Log($"Nombre: {torre.Nombre}, Kills: {torre.Kills}");
+            yield return $"[Torre Letal] Nombre: {torre.name}, Kills: {torre.kills}";
+        }
+
+        var torresDisparo = torresEnEscena
+            .Where(t => t != null && t.gameObject != null && t.gameObject.activeSelf)
+            .OrderByDescending(t => t.cntador)
+            .Take(cantidad);
+
+        foreach (var torre in torresDisparo)
+        {
+            yield return $"[Torre Precisa] Nombre: {torre.name}, Disparos: {torre.cntador}";
+        }
+
+        var enemigosTop = enemigosEnEscena
+            .Where(e => e != null && e.gameObject != null && e.gameObject.activeSelf)
+            .OrderByDescending(e => e.TotalDamageDone())
+            .Take(cantidad);
+
+        foreach (var enemigo in enemigosTop)
+        {
+            yield return $"[Enemigo Fuerte] Nombre: {enemigo.name}, Daño: {enemigo.TotalDamageDone()}";
         }
     }
+
 
 
     //
@@ -159,10 +200,13 @@ public class StatsManager : MonoBehaviour
         {
             foreach (var stat in interval.Stats)
             {
+
                 yield return (stat.EnemyType, stat.AverageDamage, stat.AverageLifetime);
             }
         }
     }
+
+  
 
     // Guerra Morena
     public Dictionary<string, List<Vector3>> GetEnemyDeathPositionsByType()

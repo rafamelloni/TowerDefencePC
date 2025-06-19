@@ -25,6 +25,7 @@ public class BaseNewEnemy : MonoBehaviour
     public virtual void TurnOn()
     {
         gameObject.SetActive(true);
+        StatsManager.Instance.enemigosEnEscena.Add(newE);
     }
     public virtual void TurnOff()
     {
