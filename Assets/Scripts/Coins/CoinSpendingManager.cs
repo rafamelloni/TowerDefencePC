@@ -53,16 +53,31 @@ public class CoinSpendingManager : MonoBehaviour
 
         if (waveList.Count == 0) return 0;
 
-        float totalCoinsSpent = 0;
-        foreach (var coinsSpent in waveList)
-        {
-            totalCoinsSpent += coinsSpent;
-        }
-
-        int totalWaves = waveList.Count;
-
-        return totalWaves > 0 ? totalCoinsSpent / totalWaves : 0;
+        return waveList.Sum() / waveList.Count;
     }
+
+    public List<(int wave, int totalSpent)> GetWaveSpendingAnalysis()
+    {
+        var validSpendings = coinsSpentPerWave
+            .Where(spent => spent > 0); // Grupo 1: Where
+
+        var orderedSpendings = validSpendings
+            .OrderByDescending(spent => spent); // Grupo 2: OrderByDescending
+
+        return orderedSpendings
+            .Select((spent, index) => (wave: index + 1, totalSpent: spent))
+            .ToList(); // Grupo 3: ToList
+    }
+
+    public Dictionary<int, List<int>> GetSpendingPatterns(int threshold)
+    {
+        return coinsSpentPerWave
+         .TakeWhile(spent => spent > threshold)
+         .Select((spent, index) => new { Value = spent, Group = (index / 3) + 1 })
+         .GroupBy(item => item.Group, item => item.Value)
+         .ToDictionary(g => g.Key, g => g.ToList());
+    }
+
 
 
     public int GetFirstCoinSpending()
@@ -70,7 +85,7 @@ public class CoinSpendingManager : MonoBehaviour
         return coinsSpentPerWave.FirstOrDefault();
     }
 
-   
+
     public IEnumerable<int> GetOrderedCoinSpendings()
     {
         return coinsSpentPerWave
@@ -79,10 +94,40 @@ public class CoinSpendingManager : MonoBehaviour
     }
 
 
-    public int GetTotalCoinSpending()
+    public object GetComplexSpendingStats()
     {
-        return coinsSpentPerWave.Aggregate(0, (total, next) => total + next);
+        var stats = coinsSpentPerWave.Aggregate(
+            new
+            {
+                Total = 0,
+                Max = int.MinValue,
+                Min = int.MaxValue,
+                Count = 0,
+                SumSquares = 0
+            },
+            (acc, coinsSpent) => new {
+                Total = acc.Total + coinsSpent,
+                Max = coinsSpent > acc.Max ? coinsSpent : acc.Max,
+                Min = coinsSpent < acc.Min ? coinsSpent : acc.Min,
+                Count = acc.Count + 1,
+                SumSquares = acc.SumSquares + (coinsSpent * coinsSpent)
+            });
+
+        float average = stats.Count > 0 ? (float)stats.Total / stats.Count : 0;
+        float stdDev = stats.Count > 1 ?
+            Mathf.Sqrt((stats.SumSquares / stats.Count) - (average * average)) : 0;
+
+        return new
+        {
+            Total = stats.Total,
+            Average = average,
+            Maximum = stats.Max,
+            Minimum = stats.Min,
+            StandardDeviation = stdDev,
+            Count = stats.Count
+        };
     }
+
 
     // Generador para obtener gastos de monedas
     public IEnumerable<int> GetCoinSpendingsGenerator()
@@ -107,5 +152,6 @@ public class CoinSpendingManager : MonoBehaviour
         return coinSpendingInfo;
     }
 }
+
 
 

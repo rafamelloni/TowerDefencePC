@@ -55,11 +55,49 @@ public class StatsManager : MonoBehaviour
             }
         }
 
+        //Lautaro Nieto
+
         // Mostrar el promedio de monedas gastadas por oleada al presionar la tecla T
         if (Input.GetKeyDown(KeyCode.T))
         {
             float averageCoinsSpent = CoinSpendingManager.Instance.GetAverageCoinsSpentPerWave();
             Debug.Log($"Promedio de monedas gastadas por oleada: {averageCoinsSpent:F2}");
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            var waveAnalysis = CoinSpendingManager.Instance.GetWaveSpendingAnalysis();
+            Debug.Log("Análisis de gastos por oleada:");
+            foreach (var item in waveAnalysis)
+            {
+                Debug.Log($"Oleada {item.wave}: {item.totalSpent} monedas gastadas");
+            }
+        }
+
+        // Tecla U: Patrones de gasto
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            var spendingPatterns = CoinSpendingManager.Instance.GetSpendingPatterns(50);
+            Debug.Log("Patrones de gasto (gastos > 50):");
+            foreach (var pattern in spendingPatterns)
+            {
+                Debug.Log($"Grupo {pattern.Key}: {string.Join(", ", pattern.Value)}");
+            }
+        }
+
+        // Tecla I: Estadísticas complejas
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            var stats = CoinSpendingManager.Instance.GetComplexSpendingStats();
+            Debug.Log($"Estadísticas de gastos: {stats}");
+        }
+
+        // Tecla P: Primer gasto registrado
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            int firstSpending = CoinSpendingManager.Instance.GetFirstCoinSpending();
+            Debug.Log($"Primer gasto registrado: {firstSpending}");
         }
 
         // Mostrar posiciones de muerte de enemigos por tipo al presionar la tecla Y
